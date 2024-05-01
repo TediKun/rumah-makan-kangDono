@@ -1,0 +1,489 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Root Css */
+:root {
+    --text-color: #000000ca;
+    --text-color-primary: #00e206;
+    --color-gb: #00aa00;
+    --body-color: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    font-size: 20px;
+    background-color: var(--body-color);
+    color: var(--text-color);
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+}
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+ul {
+    list-style: none;
+}
+button {
+    background: none;
+    color: inherit;
+}
+img {
+    width: 100%;
+    display: block;
+}
+/* First Style */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+.navbar.sticky {
+    background-color: #000000a1;
+}
+.navbar.sticky .container {
+    padding: 25px 5px;
+}
+.navbar.sticky .logo_navbar,
+.navbar.sticky .link_nav {
+    color: var(--body-color);
+}
+.navbar.sticky .logo_navbar:hover,
+.navbar.sticky .link_nav:hover,
+.navbar.sticky .link_nav.active {
+    color: var(--text-color-primary);
+}
+
+/* Css Style */
+/* Navbar */
+.navbar {
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.4s ease-in-out;
+    z-index: 10;
+}
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 5px;
+    transition: 0.2s ease-in-out;
+}
+.logo_navbar:hover,
+.link_nav:hover,
+.link_nav.active {
+    color: var(--text-color-primary);
+}
+.icn_logo_nav {
+    font-size: 2rem;
+    padding-right: 2px;
+}
+.logo_navbar {
+    font-size: 1.8rem;
+    font-weight: 800;
+    padding: 4px 6px;
+}
+
+.link_nav {
+    font-size: 1.2rem;
+    margin-right: 10px;
+    padding: 4px 8px;
+    font-weight: 400;
+}
+.nav_right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icn_btn_buy {
+    padding-left: 2px;
+}
+.buys_navbar {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 6px 25px;
+    background-color: var(--text-color-primary);
+    color: var(--body-color);
+    font-weight: 600;
+    border-radius: 6px;
+}
+.buys_navbar:hover {
+    background-color: var(--color-gb);
+}
+span.icn_bars {
+    background-color: var(--text-color-primary);
+    padding: 6px 8px;
+    border-radius: 4px;
+    font-size: 2rem;
+    display: none;
+    box-shadow: 0 0 2px #000000a1;
+}
+/* NavbarEnd */
+
+/* Header */
+.header {
+    width: 100%;
+    text-align: center;
+    line-height: 1;
+    margin-top: 11vh;
+    padding: 20px 2px;
+}
+.image_header {
+    width: 500px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.heading_header {
+    font-size: 3rem;
+    padding: 10px 0;
+    font-weight: 800;
+}
+.text_header {
+    padding: 4px 0 40px 0;
+    width: 80%;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+.cek_menu_header {
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: inherit;
+    padding: 10px 25px;
+    border: 2px solid var(--text-color-primary);
+    border-radius: 10px;
+}
+.cek_menu_header:hover {
+    background-color: var(--color-gb);
+    color: var(--body-color);
+    border: none;
+}
+/* HeaderEnd */
+/* review */
+.review {
+    width: 100%;
+    padding: 160px 0 30px 0;
+}
+.heading_review {
+    font-size: 2.3rem;
+    font-weight: 800;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.review .container {
+    width: 95%;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+}
+.rating_review {
+    width: 625px;
+    padding: 20px 34px;
+    margin-top: 8px;
+    background-color: #ffffffe5;
+    box-shadow: 0 0 4px #00000098;
+    border-radius: 10px;
+}
+.user_review {
+    width: 60px;
+    border-radius: 100%;
+}
+.name_user_review {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.star_rating {
+    padding-bottom: 8px;
+    color: #ffd90f;
+}
+.star_rating .star.star_end {
+    background: linear-gradient(
+        to right,
+        #ffda16,
+        #ffda16,
+        #ffffffda,
+        #ffffffa7
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.profil_review {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 16px;
+}
+.tanggal_review {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.text_ulasan {
+    padding: 10px 0;
+}
+
+/* reviewEnd */
+/* About */
+.tentang {
+    width: 100%;
+    padding: 160px 0 30px 0;
+}
+.tentang .container {
+    width: 96%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.heading_about {
+    font-size: 2.3rem;
+    font-weight: 800;
+}
+.about_image {
+    width: 580px;
+    border-radius: 15px;
+    transition: 0.3s ease-in-out;
+}
+.about_image:hover {
+    transform: translateY(-6px);
+}
+.paragraf_about {
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 5px 0 26px 0;
+}
+.text_about {
+    width: 55%;
+    line-height: 2;
+}
+.about_info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+.box_info_about {
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 6px #00000062;
+    transition: 0.4s ease-in-out;
+}
+.box_info_about:hover {
+    transform: translateY(-5px);
+}
+.icn_box_about {
+    font-size: 2.5rem;
+    font-weight: 900;
+    padding: 8px 0;
+}
+.text_box_about {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 6px 0;
+}
+.btn_about {
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: var(--text-color-primary);
+    padding: 14px 22px;
+    border-radius: 6px;
+    color: var(--body-color);
+    box-shadow: 0 0 4px #0000005a;
+}
+.btn_about:hover {
+    background-color: var(--color-gb);
+}
+
+/* AboutEnd */
+
+/* Produk */
+.produk {
+    width: 100%;
+    padding: 160px 0 30px 0;
+}
+.produk .container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.heading_produk {
+    font-size: 2.3rem;
+    font-weight: 800;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.image_menu {
+    height: 200px;
+    border-radius: 8px;
+    transition: 0.4s ease-in-out;
+}
+.image_menu:hover {
+    transform: translateY(-2px);
+    filter: saturate(1.5);
+}
+.info_menu {
+    padding: 16px 6px 10px 6px;
+}
+.nama_menu {
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+.price_produk {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #ff7070;
+}
+.box_menu {
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px #00000054;
+}
+.rating_menu {
+    display: flex;
+    align-items: center;
+    padding-bottom: 18px;
+}
+.rating_menu .star {
+    font-size: 0.8rem;
+    color: #ffda16;
+}
+.rating_menu .star.star_end {
+    background: linear-gradient(
+        to right,
+        #ffda16,
+        #ffda16,
+        #ffffffda,
+        #ffffffa7
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.label_rating {
+    padding-left: 8px;
+    color: #969696;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.btn_buy_menu {
+    background-color: var(--text-color-primary);
+    color: var(--body-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+/* ProdukEnd */
+
+/* Kontak */
+.kontak {
+    width: 100%;
+    padding: 150px 0 80px 0;
+}
+.heading_kontak {
+    font-size: 2.3rem;
+    font-weight: 800;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.text_kontak {
+    text-align: center;
+    padding-bottom: 40px;
+}
+.kontak .container {
+    width: 45%;
+    padding: 40px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px #0000008b;
+}
+.form1 input {
+    width: 300px;
+    padding: 10px 10px;
+    border-radius: 6px;
+    border: 0.9px solid #00000074;
+    outline: none;
+    font-size: 1.3rem;
+}
+#input_pesanan_kontak {
+    width: 600px;
+    height: 180px;
+    font-size: 1.3rem;
+    border-radius: 6px;
+    padding: 7px;
+    border: 0.9px solid #00000074;
+    outline: none;
+}
+.btn_kontak {
+    width: 600px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 8px 2px;
+    border-radius: 8px;
+    background-color: var(--text-color-primary);
+    color: var(--body-color);
+    margin-top: 12px;
+    border: none;
+}
+/* KontakEnd */
+
+/* fotter */
+.fotter {
+    width: 100%;
+    background-color: #3bff55b8;
+    margin-top: 50px;
+    padding: 30px 0 14px 0;
+}
+.text_follow {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #000000e1;
+    padding-bottom: 8px;
+}
+.fotter .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.list_sosmed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.link_sosmed {
+    padding: 2px 6px;
+}
+.copyright_fotter {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #838383d4;
+    padding: 20px 0 6px 0;
+}
+/* fotterEnd */

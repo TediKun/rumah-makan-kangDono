@@ -1,0 +1,824 @@
+/* Responsive Css Query */
+/* ##Device = Most of the Smartphones Mobiles (Portrait)*/
+@media (min-width: 320px) and (max-width: 480px) {
+    /* First Style */
+    .container {
+        width: 96%;
+        margin: 0 auto;
+    }
+    .navbar_link.active {
+        right: 0;
+        transform: rotate(0);
+        transition: 0.4s ease-in-out;
+    }
+    .navbar.sticky {
+        height: 10vh;
+        background-color: #000000a1;
+    }
+    .navbar.sticky .container {
+        padding: 20px 5px;
+    }
+    .navbar.sticky .icn_bars {
+        color: #ffffffe8;
+    }
+    .navbar.sticky .link_nav {
+        color: #000000d9;
+    }
+
+    /* Navbar Style */
+    .navbar {
+        height: 8vh;
+    }
+    .navbar .container {
+        position: relative;
+        padding: 20px 2px;
+    }
+    .icn_logo_nav {
+        font-size: 1.6rem;
+    }
+    .logo_navbar {
+        font-size: 1.4rem;
+    }
+    .navbar_link {
+        position: absolute;
+        top: 90%;
+        right: -1000%;
+        width: 238px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #ffffff;
+        border-radius: 6px;
+        padding: 4px 0 3px 6px;
+        box-shadow: 0 0 6px #00000058;
+        transform: rotate(-180deg);
+        transition: 0.3s ease-in-out;
+    }
+
+    .link_nav {
+        color: black;
+        border-radius: 4px;
+        margin-bottom: 2px;
+    }
+    .buys_navbar {
+        display: none;
+    }
+    span.icn_bars {
+        display: block;
+    }
+    /* NavbarEnd */
+
+    /* Header */
+    .image_header {
+        width: 280px;
+    }
+    .heading_header {
+        font-size: 1.8rem;
+    }
+    .text_header {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+    /* HeaderEnd */
+    /* Review */
+    .heading_review {
+        font-size: 2rem;
+    }
+    .review .container {
+        width: 98%;
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+    }
+    .rating_review {
+        width: 400px;
+        padding: 18px 10px;
+    }
+    .user_review {
+        width: 54px;
+    }
+    .name_user_review {
+        font-size: 1.4rem;
+    }
+    .star_rating {
+        font-size: 1rem;
+        padding-bottom: 2px;
+    }
+    .tanggal_review {
+        font-size: 0.8rem;
+    }
+    .text_ulasan {
+        font-size: 0.9rem;
+        padding: 5px 0;
+    }
+    /* ReviewEnd */
+    /* About */
+    .tentang {
+        padding: 120px 0 30px 0;
+    }
+    .tentang .container {
+        width: 98%;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .heading_about {
+        font-size: 2rem;
+    }
+    .about_image {
+        width: 380px;
+    }
+    .text_about {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 5px 4px;
+    }
+    .paragraf_about {
+        font-size: 0.9rem;
+        padding: 4px 0 24px 0;
+    }
+    .about_info {
+        gap: 14px;
+        margin-bottom: 24px;
+    }
+    .box_info_about {
+        padding: 15px;
+    }
+    .icn_box_about {
+        font-size: 1.8rem;
+        font-weight: 700;
+        padding: 5px 0;
+    }
+    .text_box_about {
+        font-size: 1rem;
+        padding: 4px 0;
+        line-height: 1.5;
+    }
+    .btn_about {
+        font-size: 1rem;
+        padding: 10px 28px;
+    }
+    /* AboutEnd */
+    /* Produk */
+    .produk {
+        padding: 100px 0 30px 0;
+    }
+    .produk .container {
+        width: 100%;
+        grid-template-columns: auto auto;
+        gap: 8px;
+    }
+    .heading_produk {
+        font-size: 2rem;
+        padding-bottom: 40px;
+    }
+    .box_menu {
+        width: 200px;
+    }
+    .image_menu {
+        height: 160px;
+    }
+    .info_menu {
+        padding: 14px 5px 8px 5px;
+    }
+    .nama_menu {
+        font-size: 1.2rem;
+    }
+    .price_produk {
+        font-size: 1.3rem;
+    }
+    /* ProdukEnd */
+
+    /* kontak */
+    .kontak {
+        padding: 100px 0 80px 0;
+    }
+    .heading_kontak {
+        font-size: 2rem;
+    }
+    .text_kontak {
+        font-size: 0.9rem;
+        width: 96%;
+        margin: 0 auto;
+    }
+    .kontak .container {
+        width: 95%;
+        padding: 30px 10px;
+        gap: 10px;
+    }
+    .form1 input {
+        width: 180px;
+        padding: 15px 10px;
+        font-size: 0.8rem;
+    }
+    #input_pesanan_kontak {
+        width: 360px;
+        height: 140px;
+        font-size: 0.8rem;
+    }
+    .btn_kontak {
+        width: 360px;
+        font-size: 1rem;
+        margin-top: 6px;
+    }
+    /* kontakEnd */
+    /* fotter */
+    .copyright_fotter {
+        font-size: 0.7rem;
+    }
+    .text_follow {
+        font-size: 1rem;
+    }
+    /* fotterEnd */
+}
+/* ##Device = Low Resolution Tablets, Mobiles (Landscape)*/
+@media (min-width: 481px) and (max-width: 767px) {
+    /* First Style */
+    .container {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .navbar_link.active {
+        right: 0;
+        transform: rotate(0);
+        transition: 0.4s ease-in-out;
+    }
+    .navbar.sticky {
+        height: 7vh;
+        background-color: #000000a1;
+    }
+    .navbar.sticky .container {
+        padding: 20px 5px;
+    }
+    .navbar.sticky .icn_bars {
+        color: #ffffffe8;
+    }
+    .navbar.sticky .link_nav {
+        color: #000000d9;
+    }
+    /* Navbar Style */
+    .navbar {
+        height: 8vh;
+    }
+    .navbar .container {
+        position: relative;
+        padding: 20px 2px;
+    }
+    .icn_logo_nav {
+        font-size: 1.6rem;
+    }
+    .logo_navbar {
+        font-size: 1.4rem;
+    }
+    .navbar_link {
+        position: absolute;
+        top: 90%;
+        right: -1000%;
+        width: 260px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #ffffff;
+        border-radius: 6px;
+        padding: 4px 0 3px 6px;
+        box-shadow: 0 0 6px #00000058;
+        transform: rotate(-180deg);
+        transition: 0.3s ease-in-out;
+    }
+    .link_nav {
+        color: black;
+        border-radius: 4px;
+        margin-bottom: 2px;
+    }
+    .buys_navbar {
+        display: none;
+    }
+    span.icn_bars {
+        display: block;
+    }
+    /* Header */
+    .image_header {
+        width: 380px;
+    }
+    .heading_header {
+        font-size: 2rem;
+    }
+    .text_header {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+    /* HeaderEnd */
+    /* Review */
+    .heading_review {
+        font-size: 2rem;
+    }
+    .review .container {
+        width: 98%;
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+    }
+    .rating_review {
+        width: 467px;
+        padding: 18px;
+    }
+    .text_ulasan {
+        font-size: 0.9rem;
+        padding: 5px 0;
+    }
+    /* ReviewEnd */
+    /* About */
+    .tentang {
+        padding: 100px 0 30px 0;
+    }
+    .tentang .container {
+        width: 98%;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .heading_about {
+        font-size: 2rem;
+    }
+    .about_image {
+        width: 400px;
+    }
+    .text_about {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 5px 4px;
+    }
+    .paragraf_about {
+        font-size: 0.9rem;
+        padding: 5px 0 26px 0;
+    }
+    .about_info {
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+    .box_info_about {
+        padding: 15px;
+    }
+    .icn_box_about {
+        font-size: 2rem;
+        font-weight: 800;
+    }
+    .text_box_about {
+        font-size: 0.8rem;
+        padding: 4px 0;
+        line-height: 1.4;
+    }
+    .btn_about {
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 12px 28px;
+    }
+    /* AboutEnd */
+    /* Produk */
+    .produk {
+        padding: 100px 0 30px 0;
+    }
+    .produk .container {
+        width: 98%;
+        grid-template-columns: auto auto;
+        gap: 16px;
+    }
+    .heading_produk {
+        font-size: 2rem;
+        padding-bottom: 40px;
+    }
+    .box_menu {
+        width: 225px;
+    }
+    .image_menu {
+        height: 160px;
+    }
+    .info_menu {
+        padding: 14px 5px 8px 5px;
+    }
+    .nama_menu {
+        font-size: 1.2rem;
+    }
+    .price_produk {
+        font-size: 1.3rem;
+    }
+    /* ProdukEnd */
+
+    /* kontak */
+    .kontak {
+        padding: 100px 0 60px 0;
+    }
+    .kontak .container {
+        width: 90%;
+        padding: 20px 6px;
+        gap: 10px;
+    }
+    .heading_kontak {
+        font-size: 2rem;
+    }
+    .text_kontak {
+        font-size: 1rem;
+        padding-bottom: 30px;
+    }
+    .form1 input {
+        width: 200px;
+        padding: 15px 10px;
+        font-size: 0.8rem;
+    }
+    #input_pesanan_kontak {
+        width: 400px;
+        height: 130px;
+        font-size: 0.8rem;
+    }
+    .btn_kontak {
+        width: 400px;
+        font-size: 1rem;
+        margin-top: 6px;
+    }
+    /* kontakEnd */
+    /* fotter */
+    .copyright_fotter {
+        font-size: 0.7rem;
+    }
+    .text_follow {
+        font-size: 1rem;
+    }
+    /* fotterEnd */
+}
+/* ##Device = Tablets, Ipads (portrait) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* First Style */
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .navbar_link.active {
+        right: 0;
+        transform: rotate(0);
+        transition: 0.4s ease-in-out;
+    }
+    .navbar.sticky {
+        height: 6vh;
+        background-color: #000000a1;
+    }
+    .navbar.sticky .container {
+        padding: 20px 5px;
+    }
+    .navbar.sticky .icn_bars {
+        color: #ffffffe8;
+    }
+    .navbar.sticky .link_nav {
+        color: #000000d9;
+    }
+    /* Navbar Style */
+    .navbar {
+        height: 8vh;
+    }
+    .navbar .container {
+        position: relative;
+        padding: 20px 2px;
+    }
+    .icn_logo_nav {
+        font-size: 1.6rem;
+    }
+    .logo_navbar {
+        font-size: 1.4rem;
+    }
+    .navbar_link {
+        position: absolute;
+        top: 90%;
+        right: -1000%;
+        width: 280px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #ffffff;
+        border-radius: 6px;
+        padding: 4px 0 3px 6px;
+        box-shadow: 0 0 6px #00000058;
+        transform: rotate(-180deg);
+        transition: 0.3s ease-in-out;
+    }
+    .link_nav {
+        color: black;
+        border-radius: 4px;
+        margin-bottom: 2px;
+    }
+    .buys_navbar {
+        display: none;
+    }
+    span.icn_bars {
+        display: block;
+    }
+    /* Header */
+    .heading_header {
+        font-size: 2.5rem;
+    }
+    .text_header {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+    /* HeaderEnd */
+    /* Review */
+    .heading_review {
+        font-size: 2rem;
+    }
+    .review .container {
+        width: 98%;
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+    }
+    .rating_review {
+        width: 630px;
+        padding: 18px;
+    }
+    /* ReviewEnd */
+    /* About */
+    .tentang {
+        width: 100%;
+        padding: 100px 0 30px 0;
+    }
+    .tentang .container {
+        width: 98%;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .heading_about {
+        font-size: 2rem;
+    }
+    .about_image {
+        width: 580px;
+    }
+    .text_about {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 5px 4px;
+    }
+    .paragraf_about {
+        font-size: 1.1rem;
+        padding: 5px 0 25px 0;
+    }
+    .box_info_about {
+        padding: 20px;
+    }
+    .btn_about {
+        font-size: 1.2rem;
+        padding: 14px 28px;
+    }
+    /* AboutEnd */
+    /* Produk */
+    .produk {
+        padding: 100px 0 30px 0;
+    }
+    .produk .container {
+        grid-template-columns: auto auto auto;
+        gap: 15px;
+    }
+    .heading_produk {
+        font-size: 2rem;
+        padding-bottom: 40px;
+    }
+    .box_menu {
+        width: 250px;
+    }
+    .image_menu {
+        height: 160px;
+    }
+    .info_menu {
+        padding: 14px 5px 8px 5px;
+    }
+    .nama_menu {
+        font-size: 1.2rem;
+    }
+    .price_produk {
+        font-size: 1.3rem;
+    }
+    /* ProdukEnd */
+
+    /* kontak */
+    .kontak {
+        padding: 100px 0 80px 0;
+    }
+    .kontak .container {
+        width: 90%;
+        padding: 20px 10px;
+        gap: 10px;
+    }
+    .heading_kontak {
+        font-size: 2rem;
+    }
+    .text_kontak {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1rem;
+        padding-bottom: 30px;
+    }
+    .form1 input {
+        width: 320px;
+        padding: 16px 10px;
+        font-size: 0.8rem;
+    }
+    #input_pesanan_kontak {
+        width: 640px;
+        height: 120px;
+        font-size: 0.8rem;
+    }
+    .btn_kontak {
+        width: 640px;
+        font-size: 1rem;
+        margin-top: 6px;
+    }
+    /* kontakEnd */
+    /* fotter */
+    .copyright_fotter {
+        font-size: 0.7rem;
+    }
+    .text_follow {
+        font-size: 1rem;
+    }
+    /* fotterEnd */
+}
+/* ##Device = Tablets, Ipads (landscape) */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+}
+/* ##Device = Laptops, Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    /* First Style */
+    .container {
+        width: 94%;
+        margin: 0 auto;
+    }
+    .navbar.sticky {
+        height: 5vh;
+        background-color: #000000a1;
+    }
+    .navbar.sticky .container {
+        padding: 20px 5px;
+    }
+    .navbar.sticky .logo_navbar,
+    .navbar.sticky .link_nav {
+        color: #ffffffea;
+    }
+    .navbar.sticky .logo_navbar:hover,
+    .navbar.sticky .link_nav:hover,
+    .navbar.sticky .link_nav.active {
+        color: #13ff13;
+    }
+
+    /* Navbar */
+    .nav_right {
+        display: none;
+    }
+
+    /* NavbarEnd */
+    /* Header */
+    .heading_header {
+        font-size: 2.5rem;
+    }
+    .text_header {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+    /* HeaderEnd */
+    /* Review */
+    .heading_review {
+        font-size: 2rem;
+    }
+    .review .container {
+        width: 100%;
+        gap: 22px;
+    }
+    .rating_review {
+        width: 480px;
+        padding: 18px;
+    }
+    /* ReviewEnd */
+    /* About */
+    .tentang {
+        width: 100%;
+        padding: 100px 0 30px 0;
+    }
+    .tentang .container {
+        width: 98%;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .heading_about {
+        font-size: 2rem;
+    }
+    .about_image {
+        width: 580px;
+    }
+    .text_about {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 5px 4px;
+    }
+    .paragraf_about {
+        font-size: 1.1rem;
+        padding: 5px 0 25px 0;
+    }
+    .box_info_about {
+        padding: 20px;
+    }
+    .btn_about {
+        font-size: 1.2rem;
+        padding: 14px 32px;
+    }
+    /* AboutEnd */
+    /* Produk */
+    .produk {
+        padding: 100px 0 30px 0;
+    }
+    .produk .container {
+        gap: 10px;
+    }
+    .heading_produk {
+        font-size: 2rem;
+        padding-bottom: 40px;
+    }
+    .box_menu {
+        width: 238px;
+    }
+    .image_menu {
+        height: 160px;
+    }
+    .info_menu {
+        padding: 14px 5px 8px 5px;
+    }
+    .nama_menu {
+        font-size: 1.2rem;
+    }
+    .price_produk {
+        font-size: 1.3rem;
+    }
+    /* ProdukEnd */
+
+    /* kontak */
+    .kontak {
+        padding: 100px 0 80px 0;
+    }
+    .kontak .container {
+        width: 65%;
+        padding: 20px 10px;
+        gap: 10px;
+    }
+    .heading_kontak {
+        font-size: 2rem;
+    }
+    .text_kontak {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1rem;
+        padding-bottom: 30px;
+    }
+    .form1 input {
+        width: 320px;
+        padding: 16px 10px;
+        font-size: 1rem;
+    }
+    #input_pesanan_kontak {
+        width: 640px;
+        height: 120px;
+        font-size: 1rem;
+    }
+    .btn_kontak {
+        width: 640px;
+        font-size: 1rem;
+        margin-top: 6px;
+    }
+    /* kontakEnd */
+    /* fotter */
+    .copyright_fotter {
+        font-size: 0.7rem;
+    }
+    .text_follow {
+        font-size: 1rem;
+    }
+    /* fotterEnd */
+}
+/* ##Device = Desktops */
+@media (min-width: 1281px) {
+}
+
+/* Hp Mode Desktops */
+@media (min-height: 2160px) {
+    .navbar {
+        height: 4vh;
+    }
+}
